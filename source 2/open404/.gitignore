@@ -1,0 +1,6 @@
+/target/
+/*.war
+/target-eclipse
+/.settings
+/.project
+/.classpath
