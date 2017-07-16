@@ -1,0 +1,218 @@
+// locations to search for config files that get merged into the main config;
+// config files can be ConfigSlurper scripts, Java properties files, or classes
+// in the classpath in ConfigSlurper format
+
+// grails.config.locations = [ "classpath:${appName}-config.properties",
+//                             "classpath:${appName}-config.groovy",
+//                             "file:${userHome}/.grails/${appName}-config.properties",
+//                             "file:${userHome}/.grails/${appName}-config.groovy"]
+
+// if (System.properties["${appName}.config.location"]) {
+//    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
+// }
+xssSanitizer.enabled = true
+grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
+
+// The ACCEPT header will not be used for content negotiation for user agents containing the following strings (defaults to the 4 major rendering engines)
+grails.mime.disable.accept.header.userAgents = ['Gecko', 'WebKit', 'Presto', 'Trident']
+grails.mime.types = [
+        all          : '*/*',
+        atom         : 'application/atom+xml',
+        css          : 'text/css',
+        csv          : 'text/csv',
+        form         : 'application/x-www-form-urlencoded',
+        html         : ['text/html', 'application/xhtml+xml'],
+        js           : 'text/javascript',
+        json         : ['application/json', 'text/json'],
+        multipartForm: 'multipart/form-data',
+        rss          : 'application/rss+xml',
+        text         : 'text/plain',
+        hal          : ['application/hal+json', 'application/hal+xml'],
+        xml          : ['text/xml', 'application/xml'],
+        excel        : 'application/vnd.ms-excel'
+]
+
+// URL Mapping Cache Max Size, defaults to 5000
+//grails.urlmapping.cache.maxsize = 1000
+
+// What URL patterns should be processed by the resources plugin
+grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
+grails.resources.adhoc.includes = ['/images/**', '/css/**', '/js/**', '/plugins/**']
+
+// Legacy setting for codec used to encode data with ${}
+grails.views.default.codec = "html"
+
+// The default scope for controllers. May be prototype, session or singleton.
+// If unspecified, controllers are prototype scoped.
+grails.controllers.defaultScope = 'singleton'
+grails.plugin.console.enabled = true
+
+grails.plugin.xframeoptions.sameOrigin = true
+// GSP settings
+grails {
+    views {
+        gsp {
+            encoding = 'UTF-8'
+            htmlcodec = 'xml' // use xml escaping instead of HTML4 escaping
+            codecs {
+                expression = 'html' // escapes values inside ${}
+                scriptlet = 'html' // escapes output from scriptlets in GSPs
+                taglib = 'none' // escapes output from taglibs
+                staticparts = 'none' // escapes output from static template parts
+            }
+        }
+        // escapes all not-encoded output at final stage of outputting
+        filteringCodecForContentType {
+            //'text/html' = 'html'
+        }
+    }
+
+    environments {
+        development {
+            mail {
+                host = "smtp.gmail.com"
+                port = 465
+                username = "test@gmail.com"
+                from = "test@gmail.com"
+                password = "test"
+                props = ["mail.smtp.auth"                  : "true",
+                         "mail.smtp.socketFactory.port"    : "465",
+                         "mail.smtp.socketFactory.class"   : "javax.net.ssl.SSLSocketFactory",
+                         "mail.smtp.socketFactory.fallback": "false",
+                         "mail.smtp.starttls.enable"       : "true"]
+            }
+        }
+    }
+
+}
+
+grails.views.default.codec = "none" // none, html, base64
+grails.views.gsp.encoding = "UTF-8"
+
+grails.converters.encoding = "UTF-8"
+// scaffolding templates configuration
+grails.scaffolding.templates.domainSuffix = 'Instance'
+
+grails.databinding.dateFormats = [
+        'MMddyyyy', 'yyyy-MM-dd HH:mm:ss.S', "yyyy-MM-dd'T'hh:mm:ss'Z'"]
+
+// Set to false to use the new Grails 1.2 JSONBuilder in the render method
+grails.json.legacy.builder = false
+// enabled native2ascii conversion of i18n properties files
+grails.enable.native2ascii = true
+// packages to include in Spring bean scanning
+grails.spring.bean.packages = []
+// whether to disable processing of multi part requests
+grails.web.disable.multipart = false
+
+// request parameters to mask when logging exceptions
+grails.exceptionresolver.params.exclude = ['password']
+
+// configure auto-caching of queries by default (if false you can cache individual queries with 'cache: true')
+grails.hibernate.cache.queries = false
+
+// configure passing transaction's read-only attribute to Hibernate session, queries and criterias
+// set "singleSession = false" OSIV mode in hibernate configuration after enabling
+grails.hibernate.pass.readonly = false
+// configure passing read-only to OSIV session by default, requires "singleSession = false" OSIV mode
+grails.hibernate.osiv.readonly = false
+
+environments {
+    development {
+        grails.logging.jul.usebridge = true
+
+        grails.dbconsole.enabled = false
+
+
+        local.path.temporary.linux = "/tmp/open404-temp"
+        local.path.temporary.windows = "C:\\temp\\open404-temp"
+        local.path.upload.linux = "/tmp/open404-upload"
+        local.path.upload.windows = "C:\\temp\\open404-upload"
+
+    }
+
+    test {
+        grails.logging.jul.usebridge = true
+
+        local.path.temporary.linux = "/tmp/open404-temp"
+        local.path.temporary.windows = "C:\\temp\\open404-temp"
+        local.path.upload.linux = "/tmp/open404-upload"
+        local.path.upload.windows = "C:\\temp\\open404-upload"
+
+    }
+
+    production {
+        grails.logging.jul.usebridge = false
+
+//        grails.dbconsole.enabled = true
+//        grails.dbconsole.urlRoot = '/admin/dbconsole'
+
+        local.path.temporary.linux = "/tmp/open404-temp"
+        local.path.temporary.windows = "C:\\temp\\open404-temp"
+        local.path.upload.linux = "/tmp/open404-upload"
+        local.path.upload.windows = "C:\\temp\\open404-upload"
+
+    }
+}
+
+// log4j configuration
+log4j = {
+    // Example of changing the log pattern for the default console appender:
+    //
+    //appenders {
+    //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
+    //}
+
+    error 'org.codehaus.groovy.grails.web.servlet',        // controllers
+            'org.codehaus.groovy.grails.web.pages',          // GSP
+            'org.codehaus.groovy.grails.web.sitemesh',       // layouts
+            'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
+            'org.codehaus.groovy.grails.web.mapping',        // URL mapping
+            'org.codehaus.groovy.grails.commons',            // core / classloading
+            'org.codehaus.groovy.grails.plugins',            // plugins
+            'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
+            'org.springframework',
+            'org.hibernate',
+            'net.sf.ehcache.hibernate',
+            'grails.app'
+}
+
+wez.random.salt.length = 32
+wez.random.salt.iterate.times = 1000
+wez.bootstrap.basic.permissions = [auth: ["*"], tools: ["*"], layout: ["*"], news: ["publicList", "publicShow", "markRead"], manage: ["changePassword"], upload: ["*"], download: ["*"], report: ["*"]]
+wez.session.timeout = 1200   //30*60
+
+simpleCaptcha {
+    // font size used in CAPTCHA images
+    fontSize = 20
+    height = 150
+    width = 225
+
+    // number of characters in CAPTCHA text
+    length = 4
+
+    // amount of space between the bottom of the CAPTCHA text and the bottom of the CAPTCHA image
+    // bottomPadding = 16
+
+    // distance between the diagonal lines used to obfuscate the text
+    // lineSpacing = 10
+
+    // the charcters shown in the CAPTCHA text must be one of the following
+    // this param will be passed as the first argument to this java.awt.Font constructor // http://docs.oracle.com/javase/6/docs/api/java/awt/Font.html#Font(java.lang.String,%20int,%20int)
+    // font = "Serif"
+}
+
+grails.gorm.default.constraints = {
+    '*'(nullable: true, blank: true)
+}
+
+auditLog {
+    logIds = true
+    largeValueColumnTypes = true
+    cacheDisabled = true
+    //verbose = true
+    actorClosure = { request, session ->
+        session.cName
+        //org.apache.shiro.SecurityUtils.getSubject()?.getPrincipal()
+    }
+}

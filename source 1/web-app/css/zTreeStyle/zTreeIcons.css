@@ -1,0 +1,39 @@
+/*-------------------------------------
+zTree Icons Skin
+
+version:	2.0
+author:		Hunter.z
+email:		hunter.z@263.net
+website:	http://code.google.com/p/jquerytree/
+
+-------------------------------------*/
+
+.tree li button.sim1.ico_open{ background:url(/open404/images/ztree/sim/1_open.png);}
+.tree li button.sim1.ico_close{ background:url(/open404/images/ztree/sim/1_close.png);}
+.tree li button.sim2.ico_open{ background:url(/open404/images/ztree/sim/2.png);}
+.tree li button.sim2.ico_close{ background:url(/open404/images/ztree/sim/2.png);}
+.tree li button.sim2.ico_docu{ background:url(/open404/images/ztree/sim/2.png);}
+.tree li button.sim3.ico_docu{ background:url(/open404/images/ztree/sim/3.png);}
+.tree li button.sim4.ico_docu{ background:url(/open404/images/ztree/sim/4.png);}
+.tree li button.sim5.ico_docu{ background:url(/open404/images/ztree/sim/5.png);}
+.tree li button.sim6.ico_docu{ background:url(/open404/images/ztree/sim/6.png);}
+.tree li button.sim7.ico_docu{ background:url(/open404/images/ztree/sim/7.png);}
+.tree li button.sim8.ico_docu{ background:url(/open404/images/ztree/sim/8.png);}
+.tree li button.sim9.ico_docu{ background:url(/open404/images/ztree/sim/9.png);}
+.tree li button.sim10.ico_docu{ background:url(/open404/images/ztree/sim/10.png);}
+
+.tree li button.flag1.ico_open{ background:url(/open404/images/ztree/flag/1_open.png);}
+.tree li button.flag1.ico_close{ background:url(/open404/images/ztree/flag/1_close.png);}
+.tree li button.flag2.ico_open{ background:url(/open404/images/ztree/flag/2.png);}
+.tree li button.flag2.ico_close{ background:url(/open404/images/ztree/flag/2.png);}
+.tree li button.flag2.ico_docu{ background:url(/open404/images/ztree/flag/2.png);}
+.tree li button.flag3.ico_docu{ background:url(/open404/images/ztree/flag/3.png);}
+.tree li button.flag4.ico_docu{ background:url(/open404/images/ztree/flag/4.png);}
+.tree li button.flag5.ico_docu{ background:url(/open404/images/ztree/flag/5.png);}
+.tree li button.flag6.ico_docu{ background:url(/open404/images/ztree/flag/6.png);}
+.tree li button.flag7.ico_docu{ background:url(/open404/images/ztree/flag/7.png);}
+.tree li button.flag8.ico_docu{ background:url(/open404/images/ztree/flag/8.png);}
+.tree li button.flag9.ico_docu{ background:url(/open404/images/ztree/flag/9.png);}
+.tree li button.flag10.ico_docu{ background:url(/open404/images/ztree/flag/10.png);}
+
+

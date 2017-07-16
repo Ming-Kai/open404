@@ -1,0 +1,157 @@
+.ui-widget {
+  font-family: "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+.ui-widget .ui-widget {
+  font-size: 15px;
+}
+.breadcrumb {
+  color: #f2960d;
+  font-weight: bold;
+  padding: 8px 15px;
+  margin-bottom: 8px;
+  list-style: none;
+  background-color: #fceacf;
+  border-radius: 4px;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #f2960d;
+}
+.breadcrumb > .active {
+  color: #915a08;
+}
+.fixed-table-pagination {
+  color: #fff;
+  border-bottom-color: #f5f5f5;
+  background-color: #f7c06e;
+  height: 45px;
+}
+.table {
+  white-space: nowrap;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 4px 8px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th {
+  background-color: #fceacf;
+  vertical-align: middle;
+}
+.table > thead > tr > th > label,
+.table > tbody > tr > th > label {
+  font-weight: normal;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+th {
+  font-weight: normal;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: #f2960d;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #f2960d;
+  border-color: #f2960d;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #915a08;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #f2960d;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #915a08;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+input[type="password"],
+.ui-autocomplete-input,
+textarea,
+.uneditable-input {
+  display: inline-block;
+  padding: 4px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #555555;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 3px;
+  /* Safari 4 */
+  -moz-border-radius: 3px;
+  /* Firefox 3.6 */
+  border-radius: 4px;
+}
+.form-control {
+  height: 29px;
+  padding: 3px 4px;
+}
+.fixed-table-container thead th .th-inner {
+  padding: 5px 0px 0px 0px;
+  font-weight: normal;
+  height: 28px;
+  vertical-align: bottom;
+  color: #301e03;
+}
+.fixed-table-pagination .pagination,
+.fixed-table-pagination .pagination-detail {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.fixed-table-pagination .pagination a {
+  padding: 3px 12px;
+  line-height: 1.428571429;
+}
+.fixed-table-container {
+  position: relative;
+  clear: both;
+  border: 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.alert {
+  padding: 8px 15px;
+  margin-bottom: 4px;
+}
+.modal-footer {
+  padding: 10px;
+  margin-top: 0px;
+}
+.filter .btn {
+  padding: 3px 12px;
+}
+.input-group-addon {
+  padding: 1px 12px;
+}
+.fixed-table-container tbody td {
+  border-left: #aaa;
+}
+.table > thead > tr > th {
+  border-bottom: #aaa;
+}
+.fixed-table-container thead th {
+  border-left: #aaa;
+}

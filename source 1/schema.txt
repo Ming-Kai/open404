@@ -1,0 +1,81 @@
+CREATE TABLE "public"."aqx" (
+"site_name" varchar(255) COLLATE "default",
+"county" varchar(255) COLLATE "default",
+"psi" varchar(255) COLLATE "default",
+"major_pollutant" varchar(255) COLLATE "default",
+"status" varchar(255) COLLATE "default",
+"so2" varchar(255) COLLATE "default",
+"co" varchar(255) COLLATE "default",
+"o3" varchar(255) COLLATE "default",
+"pm10" varchar(255) COLLATE "default",
+"pm2_5" varchar(255) COLLATE "default",
+"no2" varchar(255) COLLATE "default",
+"wind_speed" varchar(255) COLLATE "default",
+"wind_direc" varchar(255) COLLATE "default",
+"fpmi" varchar(255) COLLATE "default",
+"nox" varchar(255) COLLATE "default",
+"no" varchar(255) COLLATE "default",
+"PublishTime" varchar(255) COLLATE "default",
+"publish_dt" timestamp(6),
+"imp_num" int8,
+"id" numeric
+)
+WITH (OIDS=FALSE)
+;
+
+
+CREATE TABLE "public"."aqx_site" (
+"site_name" varchar(255) COLLATE "default",
+"site_eng_name" varchar(255) COLLATE "default",
+"area_name" varchar(255) COLLATE "default",
+"county" varchar(255) COLLATE "default",
+"township" varchar(255) COLLATE "default",
+"site_address" varchar(255) COLLATE "default",
+"lon" varchar(255) COLLATE "default",
+"lat" varchar(255) COLLATE "default",
+"site_type" varchar(255) COLLATE "default",
+"the_geom" "public"."geometry"
+)
+WITH (OIDS=FALSE)
+;
+
+
+CREATE TABLE "public"."factory" (
+"工廠名稱" varchar(255) COLLATE "default",
+"工廠登記編號" varchar(255) COLLATE "default",
+"工廠設立許可案號" varchar(255) COLLATE "default",
+"工廠地址" varchar(255) COLLATE "default",
+"工廠市鎮鄉村里" varchar(255) COLLATE "default",
+"工廠負責人姓名" varchar(255) COLLATE "default",
+"統一編號" varchar(255) COLLATE "default",
+"工廠組織型態" varchar(255) COLLATE "default",
+"工廠設立核准日期" varchar(255) COLLATE "default",
+"工廠登記核准日期" varchar(255) COLLATE "default",
+"工廠登記狀態" varchar(255) COLLATE "default",
+"產業類別" varchar(255) COLLATE "default",
+"主要產品" varchar(255) COLLATE "default",
+"lon" varchar(255) COLLATE "default",
+"lat" varchar(255) COLLATE "default",
+"type_csv" varchar(255) COLLATE "default"
+)
+WITH (OIDS=FALSE)
+;
+
+
+CREATE TABLE "public"."landfill" (
+"id" int4 DEFAULT nextval('landfill_id_seq'::regclass) NOT NULL,
+"geom" "public"."geometry",
+"seq" numeric,
+"landfillna" varchar(128) COLLATE "default",
+"planned_ca" numeric,
+"remaining_" numeric,
+"county" varchar(128) COLLATE "default",
+"township" varchar(128) COLLATE "default",
+"address" varchar(128) COLLATE "default",
+"lon" numeric,
+"lat" numeric,
+"資料統計時" varchar(128) COLLATE "default",
+CONSTRAINT "landfill_pkey" PRIMARY KEY ("id")
+)
+WITH (OIDS=FALSE)
+;

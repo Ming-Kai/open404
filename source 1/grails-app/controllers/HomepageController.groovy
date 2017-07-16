@@ -1,0 +1,4 @@
+class HomepageController {
+    def index() {
+    }
+}

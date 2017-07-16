@@ -1,0 +1,199 @@
+body {
+    padding:0;
+    border:0;
+    margin:0;
+    font-size:16px;
+    font-family: verdana,arial,sans-serif;
+    color:#000;
+    min-width: 800px;
+}
+table {
+    border-spacing: 0;
+}
+/* 置頂的系統代碼區 */
+.toptable {
+    width:100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: #fcecfc; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fcecfc 0%, #f9d4ee 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcecfc), color-stop(99%,#f9d4ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fcecfc 0%,#f9d4ee 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fcecfc 0%,#f9d4ee 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fcecfc 0%,#f9d4ee 99%); /* IE10+ */
+    background: linear-gradient(top,  #fcecfc 0%,#f9d4ee 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#f9d4ee',GradientType=0 ); /* IE6-9 */
+}
+/* 淡藍色表格 */
+.bordered {
+    width: 99%;
+    margin: 5px;
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+    white-space: nowrap; /* 不斷行 */
+}
+
+.bordered th {
+    border-left: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap; /* 不斷行 */
+    vertical-align:middle;
+}
+
+.bordered td {
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+    vertical-align:middle;
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    border-bottom: 1px solid #ccc;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.bordered td {
+    background-color: #fffdf2;
+    font-size: 16px;
+
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+/* 淡藍色查詢結果 */
+
+.searchlist {
+    width: 99%;
+    margin: 5px;
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+}
+
+.searchlist th {
+    border-left: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+.searchlist td {
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.searchlist th {
+    background: #d7e5ae; /* Old browsers */
+    background: -moz-linear-gradient(top, #d7e5ae 0%, #b4c97e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d7e5ae), color-stop(100%,#b4c97e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #d7e5ae 0%,#b4c97e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #d7e5ae 0%,#b4c97e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #d7e5ae 0%,#b4c97e 100%); /* IE10+ */
+    background: linear-gradient(top, #d7e5ae 0%,#b4c97e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7e5ae', endColorstr='#b4c97e',GradientType=0 ); /* IE6-9 */
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    border-bottom: 1px solid #ccc;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.searchlist td:first-child, .searchlist th:first-child {
+    border-left: none;
+}
+
+.searchlist th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.searchlist th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.searchlist tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.searchlist tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+/* Normal row hover styles */
+.rowHover td,  /* Internet Explorer < 7 (and 7 in quirks mode) requires a specific class */
+.searchlist tr:hover td            /* All others can use the :hover pseudo */
+{
+    background-color:#daFAFA;
+}
+
+.searchlist .odd
+{
+    background-color: #e7fed2;
+    white-space: nowrap; /* 不斷行 */
+}
+
+.searchlist .even
+{
+    color: #3D3D3D;
+    padding: 4px;
+    background-color: #fffdf2;
+    overflow: hidden; /* 超過範圍隱藏 */
+    white-space: nowrap; /* 不斷行 */
+}

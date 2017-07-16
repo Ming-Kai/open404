@@ -1,0 +1,255 @@
+//blue #428bca
+@mainColorHue: 36;
+@mainColor: hsl(208, 56%, 50%);
+@lighterColor1: hsl(208, 56%, 90%);
+@lighterColor2: hsl(208, 56%, 70%);
+@darkerColor1: hsl(208, 56%, 30%);
+@darkerColor2: hsl(208, 56%, 10%);
+@font-size: 16px;
+
+.ui-widget {
+  font-family: "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: @font-size;
+}
+
+.ui-widget .ui-widget {
+  font-size: @font-size;
+}
+
+//breadcrumb
+.breadcrumb {
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 8px;
+  margin-bottom: 4px;
+  list-style: none;
+  background-color: @lighterColor2;
+  border-radius: 4px;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #fff;
+}
+.breadcrumb > .active {
+  color: #fff;
+}
+
+.fixed-table-pagination {
+  color: #fff;
+  border-bottom-color: #f5f5f5;
+  background-color: @lighterColor2;
+  height: 45px;
+}
+
+.panel > .table th {
+  //  font-weight: normal;
+  //  color: @darkerColor2;
+}
+
+//table
+.table {
+//  white-space: nowrap;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 2px 4px;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th {
+  background-color: @lighterColor1;
+  vertical-align: middle;
+}
+
+//label
+.table > thead > tr > th > label,
+.table > tbody > tr > th > label {
+  font-weight: normal;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+
+th {
+  font-weight: normal;
+}
+
+.table-form > thead > tr > th,
+.table-form > tbody > tr > th,
+.table-form > tfoot > tr > th {
+  text-align: right;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: @mainColor;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: @mainColor;
+  border-color: @mainColor;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  color: @darkerColor1;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: @mainColor;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: @darkerColor1;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+input[type="password"],
+.ui-autocomplete-input,
+textarea,
+.uneditable-input {
+  display: inline-block;
+  font-size: @font-size;
+  line-height: 1.4;
+  color: #555555;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 3px; /* Safari 4 */
+  -moz-border-radius: 3px; /* Firefox 3.6 */
+  border-radius: 4px;
+}
+
+.form-control {
+  height: 30px;
+  padding: 3px 4px;
+}
+
+//bootstrap table
+.fixed-table-container thead th .th-inner {
+  padding: 5px 0px 0px 0px;
+  font-weight: normal;
+//  height: 28px;
+  vertical-align: bottom;
+  color: @darkerColor2
+}
+
+.fixed-table-pagination .pagination, .fixed-table-pagination .pagination-detail {
+  margin-top: 3px;
+  margin-bottom: 2px
+}
+
+.fixed-table-pagination .pagination a {
+  padding: 3px 12px;
+  line-height: 1.428571429
+}
+
+.fixed-table-container {
+  position: relative;
+  clear: both;
+  border: 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px
+}
+
+.fixed-table-container tbody td {
+  border-left: 1px solid #aaa;
+}
+
+.table > thead > tr > th {
+  vertical-align: middle;
+  border-bottom: 1px solid #aaa;
+}
+
+.fixed-table-container thead th {
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border-left: 1px solid #aaa;
+}
+
+//alert
+.alert {
+  padding: 8px 15px;
+  margin-bottom:4px;
+}
+//modal
+.modal-footer {
+  padding: 10px;
+  margin-top: 0px;
+}
+
+.filter .btn {
+  padding: 3px 6px;
+}
+
+.input-group-addon {
+  padding: 1px 3px;
+}
+
+.table-th-right th {
+  text-align: right;
+}
+
+.table-th-center th {
+  text-align: center;
+}
+
+th {
+  text-align: right;
+}
+
+.font-small {
+  font-size: 13px;
+}
+
+pre {
+  margin: 0px;
+}
+
+.btable > thead > tr > th {
+  text-align: center;
+}
+
+.navbar-default .navbar-brand {
+  color: @darkerColor1;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: @darkerColor1;
+}
+
+.badge {
+  font-size: 75%;
+}
+
+.badge-success {
+  background-color: #5cb85c;
+}
+
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+}
+
+td > .panel {
+  margin-bottom: 0px;
+}

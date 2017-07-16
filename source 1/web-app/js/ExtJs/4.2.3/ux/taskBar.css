@@ -1,0 +1,34 @@
+.ux-taskbar {
+    padding-left: 4px!important
+}
+
+div.ux-taskbar div.x-toolbar {
+    background: transparent none;
+    border: 0 none;
+    padding: 0
+}
+
+.ux-desktop-black .ux-taskbar {
+    background: transparent url("images/taskbar/black/taskbar-start-panel-bg.gif") repeat-x left top;
+    border-color: transparent
+}
+
+.ux-desktop-black .ux-taskbar .x-splitter {
+    background: transparent url(images/taskbar/black/taskbar-split-h.gif) no-repeat scroll 0 -2px
+}
+
+.ux-desktop-black .ux-taskbar .x-toolbar-text {
+    color: white!important
+}
+
+.ux-desktop-black .ux-taskbar .x-btn-default-toolbar-small-over {
+    background-color: yellow
+}
+
+.ux-desktop-black .ux-taskbar .x-btn-inner {
+    color: white
+}
+
+.ux-desktop-black .ux-taskbar .x-btn-pressed .x-btn-inner,.ux-taskbar .x-btn-over .x-btn-inner {
+    color: black
+}

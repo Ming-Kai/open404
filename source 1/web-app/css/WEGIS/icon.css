@@ -1,0 +1,204 @@
+/*地圖類型*/
+.baseLayer_TGOSMAP97{
+    background-image: url('../../images/WEGIS/MapIcon/TGOSMAP97.png') !important;
+    width: 75px!important;
+    height: 50px!important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.baseLayer_ROADMAP97{
+    background-image: url('../../images/WEGIS/MapIcon/ROADMAP97.png') !important;
+    width: 75px!important;
+    height: 50px!important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.baseLayer_F2IMAGE97{
+    background-image: url('../../images/WEGIS/MapIcon/F2IMAGE97.png') !important;
+    width: 75px!important;
+    height: 50px!important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.baseLayer_NLSCMAP97{
+    background-image: url('../../images/WEGIS/MapIcon/NLSCMAP97.png') !important;
+    width: 75px!important;
+    height: 50px!important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.baseLayer_BLANKMAP{
+    background-image: url('../../images/WEGIS/MapIcon/BLANKMAP.png') !important;
+    width: 75px!important;
+    height: 50px!important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+/*Map toolbar*/
+.toolbar_ZoomTaiwan {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_ZoomTaiwan.png') !important;
+}
+
+.toolbar_ZoomChiayi {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_ZoomChiayi.png') !important;
+}
+
+.toolbar_ZoomBox {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_ZoomBox.png') !important;
+}
+
+.toolbar_ZoomIn {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_ZoomIn.png') !important;
+}
+
+.toolbar_ZoomOut {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_ZoomOut.png') !important;
+}
+
+.toolbar_ZoomPan {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_ZoomPan.png') !important;
+}
+
+.toolbar_Previous {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_Previous.png') !important;
+}
+
+.toolbar_Next {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_Next.png') !important;
+}
+
+.toolbar_MeasureLength {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_MeasureLength.png') !important;
+}
+
+.toolbar_MeasureArea {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_MeasureArea.png') !important;
+}
+
+.toolbar_Geolocate {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_Geolocate.png') !important;
+}
+
+.toolbar_FullScreen {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_FullScreen.png') !important;
+}
+
+.toolbar_BaseLayers {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_BaseLayers.png') !important;
+}
+
+.toolbar_Layers {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_Layers.png') !important;
+}
+
+.toolbar_Toolbox {
+     background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_Toolbox.png') !important;
+ }
+
+/*圖層類型*/
+.layer_OverlayLayers {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_OverlayLayers.png') !important;
+}
+
+.layer_Point {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_Points.png') !important;
+}
+
+.layer_Line {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_Line.png') !important;
+}
+
+.layer_Polygon {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_Polygon.png') !important;
+}
+
+.layer_NP100-1 {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_NP100-1.png') !important;
+}
+
+.layer_NP100-2 {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_NP100-2.png') !important;
+}
+
+.layer_NP100-3 {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_NP100-3.png') !important;
+}
+
+.layer_NP200 {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_NP200.png') !important;
+}
+
+.layer_NP300 {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_NP300.png') !important;
+}
+
+.layer_NP400 {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_NP400.png') !important;
+}
+
+.layer_NP500 {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_NP500.png') !important;
+}
+
+.layer_NP600 {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_NP600.png') !important;
+}
+
+.layer_NP700 {
+    background-image: url('../../images/WEGIS/LayerIcon/layer_NP700.png') !important;
+}
+
+/*圖層清單context menu*/
+.layerContextMenu_top {
+    background-image: url('../../images/WEGIS/LayerContextMenu/top.png') !important;
+}
+
+.layerContextMenu_bottom {
+    background-image: url('../../images/WEGIS/LayerContextMenu/bottom.png') !important;
+}
+
+.layerContextMenu_search {
+    background-image: url('../../images/WEGIS/LayerContextMenu/search.png') !important;
+}
+
+/*環域分析工具列*/
+.toolbar_EnvSelect {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_EnvSelect.png') !important;
+}
+
+.toolbar_EnvDrag {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_EnvDrag.png') !important;
+}
+
+.toolbar_EnvDelete {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_EnvDelete.png') !important;
+}
+
+.toolbar_EnvDrawPoint {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_EnvDrawPoint.png') !important;
+}
+
+.toolbar_EnvDrawCircle {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_EnvDrawCircle.png') !important;
+}
+
+.toolbar_EnvDrawPolyline {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_EnvDrawPolyline.png') !important;
+}
+
+.toolbar_EnvDrawRectangle {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_EnvDrawRectangle.png') !important;
+}
+
+.toolbar_EnvDrawPolygon {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_EnvDrawPolygon.png') !important;
+}
+
+.toolbar_EnvEraser {
+    background-image: url('../../images/WEGIS/ToolbarIcon/toolbar_Eraser.png') !important;
+}

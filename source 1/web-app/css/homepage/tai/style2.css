@@ -1,0 +1,18 @@
+.city{
+                stroke-width: 1;
+                stroke: #060606;
+}
+.mouse{
+	stroke:#FFFF00;
+	stroke-width:5;
+}
+.labels{
+                fill: #0D0D0D;
+                stroke:none;
+                font-size: 17px;
+                pointer-events:none;
+}
+form{
+	height:50px;
+	float:left;
+}

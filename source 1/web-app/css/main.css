@@ -1,0 +1,322 @@
+/*必填欄位*/
+.impfont {
+    text-align: right;
+    font-size:15px;
+    font-weight:bold;
+    color: #BC1717;
+}
+
+input,select,textarea {
+    font: 15px verdana, arial, helvetica, sans-serif;
+    margin: 2px 0;
+    padding: 2px 4px;
+}
+
+.readonly {
+    margin: 2px 0;
+    padding: 2px 4px;
+    background-color: #D8D8D8;
+}
+
+input[type="text"][disabled], textarea[disabled] {
+    background-color: #DDDDDD;
+}
+
+/* PAGINATION */
+
+.paginateButtons {
+    /*    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;*/
+    /*    border: 1px solid #ccc;*/
+    border-top: 0;
+    color: #666;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 3px;
+}
+.paginateButtons a {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    border-color: #ccc #aaa #aaa #ccc;
+    color: #666;
+    margin: 0 3px;
+    padding: 2px 6px;
+}
+.paginateButtons span {
+    padding: 2px 3px;
+    color:#000;
+}
+
+.listNum {
+    text-align: right;
+}
+
+.listCenter {
+    text-align: center;
+}
+
+td.click, th.click{
+    background-color:#006666;
+    color: #FFF;
+}
+td.hover, tr.hover{
+    background-color:#2B8054;
+    color:  #fff;
+}
+
+td.hover2, tr.hover{
+    background-color:red;
+    color:  #fff;
+}
+
+input.date {
+	text-align: center;
+}
+
+input.digit {
+	text-align: right;
+}
+
+.normal-text {
+	font-weight: normal;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+button.lovs1-button {
+    width: 40px;
+}
+
+table.derek1 {
+    border: 1px  solid;
+    border-color: #eaeaea;
+    /*cursor: pointer;*/
+    font-size: 14px;
+}
+
+table.derek1 th {
+    background: #9dd53a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(50%,#a1d54f), color-stop(51%,#80c217), color-stop(100%,#7cbc0a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
+}
+
+table.derek1 tr.header1 td {
+    background-color: #88b5dd;
+    color: #eeeeee;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+}
+
+table.derek1 tr.title td {
+    border-bottom: solid thin black;
+}
+
+table.derek1 tr {
+    background-color: #ffffff;
+    border: 1px  solid;
+    border-color: #efefef;
+
+}
+
+table.derek1 tr:hover {
+    background-color: #3884c7;
+    color: #ffffff;
+}
+
+table.derek1 td {
+    padding: 4px;
+    margin: 4px;
+}
+/*table.derek1 tr.odd {*/
+    /*background-color: #d7e6f4;*/
+/*}*/
+
+table.derek1 td {
+    vertical-align: middle;
+}
+
+input[type=radio] + label {
+    margin-right: 1em;
+}
+
+input[type=checkbox] + label {
+    margin-right: 1em;
+}
+
+select.report.format option {
+    background-repeat: no-repeat;
+    padding-left: 22px;
+}
+
+select.report.format option[value=pdf] {
+    background-image: url(../images/report-icons/pdf.png);
+}
+
+select.report.format option[value=rtf] {
+    background-image: url(../images/report-icons/word.png);
+}
+
+select.report.format option[value=excel] {
+    background-image: url(../images/report-icons/excel.png);
+}
+
+.small-font {
+    font-size: 12px;
+}
+
+.large-font {
+    font-size: 24px;
+}
+
+fieldset.crappy {
+    /* border: none; */
+    /* border-top: solid thin black; */
+    margin-top: 1em;
+    background-color: #FAFFE4;
+}
+
+.cqt-state {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: -10%;
+}
+.cqt-state.state0 { background-color: lightskyblue; }
+.cqt-state.state1 { background-color: orange; }
+.cqt-state.state2 { background-color: green; }
+.cqt-state.state3 { background-color: red; }
+.cqt-state.state4 { background-color: blueviolet; }
+.cqt-state.state5 { background-color: dimgray; }
+.cqt-state.state6 { background-color: red; }
+
+table.queue-list { border-collapse: collapse; }
+table.queue-list > thead > tr > th { border-bottom: solid thin black; }
+table.queue-list > tbody > tr > td { padding: 5px; }
+table.queue-list > tbody > tr > td + td { border-left: solid thin black; }
+.cqt-error-mesg { font-weight: bold; color: red; padding: 2px; border: solid thin red; font-size: 12px;}
+
+.stopThread { width: 420px; height: 200px; }
+.stopThread td { text-align: center; vertical-align: middle; }
+
+.loading.hide { display: none; }
+.non-loading.hide { display: none; }
+
+.removed { color: #999999; }
+.hidden { display: none; }
+
+#d08f863a .container div { padding: 3px 10px; }
+/* #d08f863a { position: relative; } */
+/* #d08f863a > table { position: absolute; top: 0; left: 0; } */
+
+.qtip-calendar-helper div.calendar-helper button { font-size: 16pt; }
+.ui-tabs.arstsra { border: 0; margin-top: 0px; background: inherit; }
+.ui-tabs.arstsra > ul { background: inherit; border: 0; }
+.ui-tabs.arstsra > ul > li > a { color: #633a5c; }
+.ui-tabs.arstsra > ul > li.ui-state-hover {
+	background: #ede6e9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ede6e9 0%, #ddc9d4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ede6e9), color-stop(100%,#ddc9d4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ede6e9 0%,#ddc9d4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ede6e9 0%,#ddc9d4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ede6e9 0%,#ddc9d4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ede6e9 0%,#ddc9d4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ede6e9', endColorstr='#ddc9d4',GradientType=0 ); /* IE6-9 */
+	border-color: #d1b6c5; }
+.ui-tabs.arstsra > ul > li.ui-state-hover > a { color: #633a5c; }
+.ui-tabs.arstsra > ul > li:first-child { margin-left: 30px; }
+.ui-tabs.arstsra > ul > li.ui-tabs-selected {
+	background: #7c5c76; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7c5c76 0%, #63395c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7c5c76), color-stop(100%,#63395c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7c5c76 0%,#63395c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7c5c76 0%,#63395c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7c5c76 0%,#63395c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7c5c76 0%,#63395c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c5c76', endColorstr='#63395c',GradientType=0 ); /* IE6-9 */
+	border: 0; }
+.ui-tabs.arstsra > ul > li.ui-tabs-selected > a { color: white; }
+.ui-tabs.arstsra > div.ui-tabs-panel { border: solid 3px #633a5c; border-radius: 5px; background: white; }
+
+.x-form-invalid {
+    border: 2px solid #ff0000;
+}
+
+table.noborder > tbody > tr > th { border: none; }
+table.noborder > tbody > tr > td { border: none; }
+
+.collapseTitle{
+  color: #ffffff;
+  background-color: #88b5dd;
+  border-color: #88b5dd;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.table-embed th{
+    vertical-align: middle;
+    font-weight: normal;
+    text-align: center;
+}
+.table-embed td{
+    vertical-align: middle;
+    font-weight: normal;
+    text-align: center;
+}
+
+.notification-container {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    left: 15px;
+    
+    i {
+        color: #fff;
+    }
+}
+
+.notification-counter {   
+    position: absolute;
+    z-index: 999;
+    top: -10px;
+    left: 5px;
+    
+    background-color: rgba(212, 19, 13, 1);
+    color: #fff;
+    border-radius: 3px;
+    padding: 1px 3px;
+    font: 8px Verdana;
+}
+
+/*說明區塊 標題*/
+.helpTitle {
+    color:royalblue;
+    font-weight: bolder;
+}
+/*說明區塊 內文*/
+.helpText {
+    color:royalblue;
+}
+/*說明區塊 用Qtip*/
+.helpQtips {
+    color:royalblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*說明區塊 顯示Qtip效果*/
+.helpQtipsText {
+    color:royalblue;
+    text-decoration: underline;
+}
