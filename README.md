@@ -1,6 +1,8 @@
 ﻿# open404
 嘉義黑蚵松 - open404 (環境汙染組)
 
+簡報檔：https://github.com/Ming-Kai/open404/raw/master/%E5%98%89%E7%BE%A9%E9%BB%91%E8%9A%B5%E6%9D%BE0716.pptx
+
 
 =====使用資料集=====
 
